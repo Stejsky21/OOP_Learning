@@ -8,32 +8,32 @@ namespace OOP_Learning
     {
         public void Main()
         {
-            int[][] matice = {  new int[] { 1, 2, 3 },
-                                new int[] { 4, 5, 6 },
-                                new int[] { 7, 8, 9 },
-                                new int[] { 10, 11, 12 } };
+            int[][] matice = {  new int[] { 1, 2, 3, },
+                                new int[] { 4, 5, 6, },
+                                new int[] { 7, 8, 9, },
+                                new int[] { 10, 11, 12, }};
 
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < matice[i].Length; i++)
             {
                 var sloupec = 0;
 
-                for (int j = 0; j < 4; j++)
+                for (int j = 0; j < matice.Length; j++)
                 {
                     sloupec += matice[j][i];
                 }
                 Console.WriteLine(sloupec / 4);
             }
 
-            for (int j = 0; j < 4; j++)
+            for (int j = 0; j < matice.Length; j++)
             {
-                var sloupec = 0;
+                var radek = 0;
 
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < matice[i].Length; i++)
                 {
-                    sloupec += matice[j][i];
+                    radek += matice[j][i];
                 }
-                Console.WriteLine(sloupec / 3);
+                Console.WriteLine(radek / 3);
             }
         }
     }
